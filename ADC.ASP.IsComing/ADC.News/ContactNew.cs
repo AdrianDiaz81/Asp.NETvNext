@@ -3,6 +3,7 @@
     using System;
     using Newtonsoft.Json.Linq;
     using System.Configuration;
+    using System.Threading.Tasks;
 
     public class ContactNew
     {
@@ -65,6 +66,34 @@
             {
 
             }
+        }
+
+        public async Task<bool> Add(string name, string lastName)
+        {
+            try
+            {
+
+                return true;
+            }
+            catch (Exception ex)
+            {
+                await LogAsyc(ex);
+                return false;
+            }
+            finally
+            {
+                await CloseAsyn();
+            }
+        }
+
+        private Task CloseAsyn()
+        {
+            throw new NotImplementedException();
+        }
+
+        private Task LogAsyc(Exception ex)
+        {
+            throw new NotImplementedException();
         }
     }
 }
