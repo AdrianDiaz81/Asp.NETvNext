@@ -88,6 +88,7 @@ namespace ADC.ASP.vNext
             // Register application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
+            services.AddTransient<INewService, NewsService>();
         }
 
        

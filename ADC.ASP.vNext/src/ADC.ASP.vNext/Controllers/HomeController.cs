@@ -9,10 +9,16 @@ namespace ADC.ASP.vNext.Controllers
 {
     public class HomeController : Controller
     {
-        private  IConfiguration _config;
+        IConfiguration config;
+        public HomeController(IConfiguration cfg)
+        {
+            config = cfg;
+        }
+        
+       
         public IActionResult Index()
         {
-            
+           var data= config.Get("AppSettings:SiteTitle");
             return View();
         }
 

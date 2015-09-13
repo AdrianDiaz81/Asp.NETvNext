@@ -1,0 +1,13 @@
+﻿@model IEnumerable<ADC.ASP.vNext.Models.News>
+
+    <h2>Most popular news</h2>
+    @foreach (var news in Model)
+    {
+    <ul>
+        <li>
+            <h2>@news.Headline</h2>
+            <span>@news.Text</span>
+        </li>
+    </ul>
+
+    }
