@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "ADC.ASP.vNext"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-ADC.ASP.vNext-f64c4616-da51-4dcb-a06c-b09c1dd78278;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}
